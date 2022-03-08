@@ -4,4 +4,4 @@ echo "-------------- Start clasp push ------------"
 clasp push
 
 echo "-------------- Start clasp deploy ------------"
-clasp deploy -i AKfycbyydWrne7n1NfTJ8E-8oARLGI1XCy0k8RjA4sAKbQGUdEcOCBIiSkDaY1Gk6fn2S18c
+clasp deploy -i AKfycbwEYL1U-tk-hoZCgRgxDw7WidYgEO0rSRAAJ0JyReE3K4s_maNQqGMHPoubNkutme9AYg
