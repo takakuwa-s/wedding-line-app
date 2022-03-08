@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext"],
+    "experimentalDecorators": true,
+    "target": "ES6",
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  }
+}
