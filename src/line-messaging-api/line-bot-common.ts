@@ -30,24 +30,24 @@ export class LineBotCommon {
     UrlFetchApp.fetch('https://api.line.me/v2/bot/message/reply', options);
   }
 
-  // /**
-  //  * botからメッセージを送信する。
-  //  * @param message 最大長さ5の配列
-  //  * @param to 最大長さ150のIDの配列
-  //  */
-  // public static push(message: Message[], to: string[]): void {
-  //   const options: any = {
-  //     method: 'post',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //       Authorization: `Bearer ${LineBotCommon.ACCESS_TOKEN}`,
-  //     },
-  //     payload: JSON.stringify({
-  //       to: to,
-  //       messages: message,
-  //     }),
-  //   };
+  /**
+   * botからメッセージを送信する。
+   * @param message 最大長さ5の配列
+   * @param to 最大長さ150のIDの配列
+   */
+  public static push(message: Message[], to: string[]): void {
+    const options: any = {
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${LineBotCommon.ACCESS_TOKEN}`,
+      },
+      payload: JSON.stringify({
+        to: to,
+        messages: message,
+      }),
+    };
 
-  //   UrlFetchApp.fetch('https://api.line.me/v2/bot/message/multicast', options);
-  // }
+    UrlFetchApp.fetch('https://api.line.me/v2/bot/message/multicast', options);
+  }
 }
